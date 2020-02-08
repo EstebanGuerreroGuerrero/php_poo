@@ -76,7 +76,7 @@ $alimentos = array("fruta" => array("tropical" => "kiwi",
 foreach ($alimentos as $clave_alim => $alim){
     echo "$clave_alim: <br>";
 
-    while(list($clave, $valor) = each($alim)){
+    while(list($clave, $valor) = each($alim)){  //OJO CON: each
                 //EXPLICACION: Esto dice que por cada $alim: elemento del array2, lo desdoble en su clave y valor. En otras palabras en su categoria y contenido
         echo "$clave = $valor <br>";
     }
